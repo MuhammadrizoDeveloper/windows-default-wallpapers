@@ -1,7 +1,7 @@
 import { runPowerShellScript } from "@raycast/utils";
 
 export default async function setWallpaper(path: string) {
-    await runPowerShellScript(`
+  await runPowerShellScript(`
 if (-Not (Test-Path "${path}")) {
     Write-Error "File not found: ${path}"
     exit 1
